@@ -1,0 +1,165 @@
+.soulworker-bgm-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #ffffff;
+}
+.img{
+  border-style: none;
+  height: auto;
+  max-width: 100%;
+  margin-top: -149px;
+}
+.soulworker-bgm-headmenu {
+  width: 100%;
+  height: 103px;
+  position: relative;
+  align-items: center;
+  border-color: #444444;
+  border-width: 0px;
+  justify-content: flex-start;
+  background-color: #000000;
+}
+.soulworker-bgm-container1 {
+  flex: 0 0 auto;
+  width: 192px;
+  height: 33px;
+  display: flex;
+  margin-top: 38px;
+  align-items: flex-start;
+  margin-left: 72px;
+  flex-direction: column;
+  background-size: cover;
+  text-decoration: none;
+  background-image: url("public/playground_assets/beb0364e3bd7c3a38195546e048b6458974b1269-200h.png");
+  background-position: center;
+}
+.soulworker-bgm-container2 {
+  top: 2px;
+  flex: 0 0 auto;
+  left: 502px;
+  right: 0px;
+  width: 1350px;
+  border: 2px dashed rgba(120, 120, 120, 0);
+  height: 100px;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.soulworker-bgm-container3 {
+  top: 12px;
+  flex: 0 0 auto;
+  right: 4px;
+  width: 300px;
+  height: 80px;
+  display: flex;
+  position: absolute;
+  transition: 0.3s;
+  align-items: flex-start;
+  flex-direction: column;
+  background-size: cover;
+  text-decoration: none;
+  background-image: url("/public/playground_assets/11.png");
+  background-position: center;
+}
+.soulworker-bgm-container3:hover {
+  background-size: cover;
+  background-image: url("public/playground_assets/22.png");
+}
+.soulworker-bgm-container4 {
+ width: 100%;
+ height: -131px;
+  display: flex;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url("/images/bg_character4_new.jpg");
+  background-position: center;
+  margin: -50px;
+}
+.soulworker-bgm-text {
+  font-size: 24px;
+}
+.soulworker-bgm-container5 {
+  width: 100%;
+  height: 1717px;
+  display: flex;
+  align-self: center;
+  margin-top: 13px;
+  align-items: flex-start;
+  padding-left: 56px;
+  padding-right: 74px;
+  justify-content: flex-start;
+}
+.soulworker-bgm-container6 {
+  width: 100%;
+  height: 226px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1c1b29;
+}
+.soulworker-bgm-container7 {
+  flex: 0 0 auto;
+  width: 1252px;
+  height: 151px;
+  display: flex;
+  align-items: center;
+  padding-top: var(--dl-space-space-threeunits);
+  padding-left: 98px;
+  padding-right: 137px;
+  flex-direction: row;
+  padding-bottom: 26px;
+  justify-content: flex-start;
+}
+.soulworker-bgm-link1 {
+  color: rgb(164, 164, 164);
+  transition: 0.3s;
+  padding-left: 10px;
+  text-decoration: none;
+}
+.soulworker-bgm-link1:hover {
+  color: #ffffff;
+}
+.soulworker-bgm-text1 {
+  color: #ffffff;
+  padding-left: 20px;
+}
+@media(max-width: 2560px) {
+  .soulworker-bgm-container1 {
+    margin-left: 43px;
+  }
+  .soulworker-bgm-container2 {
+    top: 6px;
+    left: -13px;
+  }
+}
+@media(max-width: 1920px) {
+  .soulworker-bgm-container2 {
+    left: 88px;
+    right: 0px;
+    width: 1114px;
+    margin: auto;
+  }
+}
+@media(max-width: 1200px) {
+  .soulworker-bgm-container2 {
+    top: 6px;
+    left: 77px;
+}
+  .soulworker-bgm-container7 {
+    width: 1124px;
+  }
+}
+@media(max-width: 991px) {
+  .soulworker-bgm-container2 {
+    left: 0px;
+    right: 0px;
+    margin: auto;
+  }
+}

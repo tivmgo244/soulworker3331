@@ -1,0 +1,128 @@
+/* 라이브러리 */
+.con {
+  margin:0 auto;
+}
+
+.img-box > img {
+  width:100%;
+  display:block;
+}
+
+.row::after {
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.cell {
+  float:left;
+  box-sizing:border-box;
+}
+
+.cell-right {
+  float:right;
+  box-sizing:border-box;
+}
+
+.margin-0-auto {
+  margin:0 auto;
+}
+
+.block {
+  display:block;
+}
+
+.inline-block {
+  display:inline-block;
+}
+
+.text-align-center {
+  text-align:center;
+}
+
+.line-height-0-ch-only {
+  line-height:0;
+}
+
+.line-height-0-ch-only > * {
+  line-height:normal;
+}
+
+.relative {
+  position:relative;
+}
+
+.absolute-left {
+  position:absolute;
+  left:0;
+}
+
+.absolute-right {
+  position:absolute;
+  right:0;
+}
+
+.absolute-middle {
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+.width-100p {
+  width:100%;
+}
+
+.table {
+  display:table;
+}
+
+.table-cell {
+  display:table-cell;
+}
+
+.vertical-align-top {
+  vertical-align:top;
+}
+
+.vertical-align-middle {
+  vertical-align:middle;
+}
+
+.vertical-align-bottom {
+  vertical-align:bottom;
+}
+
+/* 커스텀 */
+
+.con {
+  width:1180px;
+}
+
+.con-min-width {
+  min-width:1180px;
+}
+
+/* 반응형 레이아웃 */
+.top-bar .menu-box-1 > ul > li > a {
+      padding: 8px 39px;
+  font-size:1.3rem;
+  letter-spacing:-0.1rem;
+  font-weight:bold;
+}
+
+.top-bar .menu-box-1 > ul > li > a > span {
+  padding: 8px 39px;
+  color: white;
+  margin-top: 28px;
+  font-size: 17px;
+}
+
+.top-bar .menu-box-1 > .li-indicator-1-box > .li-indicator-1 {
+  position:absolute;
+  top:0;
+  left:-700px;
+  width:100px;
+  height:2px;
+  background-color:#ff0707;
+  transition:top 0.3s, left 0.3s, width 0.3s, height 0.3s;
+}

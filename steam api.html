@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>�ǽð� ������ ����</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<h1>동접자</h1>
+	<div id="playerCount"></div>
+
+	<script>
+		var apiKey = "D17C03AE1CFBCC716F96629197A10A35";
+		var appId = "1825750";
+
+		function updatePlayerCount() {
+			$.getJSON("https://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?appid=" + appId + "&key=" + apiKey, function(result) {
+				var playerCount = result.response.player_count;
+				$("#playerCount").text("���� ������ ��: " + playerCount);
+			})
+			.fail(function(jqXHR, textStatus, errorThrown) {
+				console.log("API ��û�� �����Ͽ����ϴ�.");
+			});
+		}
+
+		updatePlayerCount();
+		setInterval(updatePlayerCount, 5000); // 5�ʸ��� ������Ʈ
+	</script>
+</body>
+</html>
