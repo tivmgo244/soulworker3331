@@ -1,0 +1,127 @@
+
+.font-body {
+  font-family: "Poppins", sans-serif;
+}
+
+
+.container-max {
+  max-width: 1495px;
+  margin: 0 auto;
+}
+
+
+.youtube-gallery {
+  min-height: 77vh;
+}
+.youtube-gallery .video {
+  background: url("https://assets.codepen.io/319606/video-placeholder.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.yt-single {
+  background: #141414;
+  border-radius: 10px;
+}
+.yt-single img {
+  border-bottom: 3px solid #f99c1c;
+  transition: all 0.25s ease-in-out;
+}
+
+.yt-thumb {
+  max-width: 260px;
+  width: 100%;
+  display: flex;
+  cursor: pointer;
+  margin-right: 15px;
+  margin-left: 15px;
+  min-height: 100%;
+}
+.yt-thumb:hover img {
+  opacity: 0.75;
+}
+
+.date {
+  color: #808080;
+  font-size: 0.875em;
+}
+
+.yt-title {
+  color: #ccc;
+  font-weight: 900;
+}
+
+.yt-img {
+  position: relative;
+}
+.yt-img:before {
+  content: "";
+  background-image: url("https://assets.codepen.io/319606/play-btn.svg");
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.25s ease-in-out;
+}
+
+.ypt-now-playing .yt-img:before {
+  content: "";
+  background-image: url("https://visualpharm.com/assets/676/Play-595b40b75ba036ed117da165.svg");
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+  z-index: 1;
+  opacity: 1;
+}
+
+.flickity-prev-next-button {
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.flickity-prev-next-button .flickity-button-icon {
+  position: absolute;
+  left: 30%;
+  top: 30%;
+  width: 40%;
+  height: 40%;
+}
+.flickity-prev-next-button.next {
+  right: -40px;
+}
+.flickity-prev-next-button.previous {
+  left: -40px;
+}
+
+.flickity-button {
+  position: absolute;
+  background: #141414;
+  border: none;
+  color: #fff;
+}
+.flickity-button:hover {
+  background: #c234cf;
+  cursor: pointer;
+}
+.flickity-button:disabled {
+  opacity: 1;
+  cursor: auto;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 575px) {
+  .flickity-prev-next-button.next {
+    right: -32px;
+  }
+
+  .flickity-prev-next-button.previous {
+    left: -32px;
+  }
+}
